@@ -35,7 +35,7 @@ function createList() {
   newTarea.appendChild(nodoTarea);
   lista.appendChild(newTarea);
   newTarea.classList.add('tarea');
-  newTarea.addEventListener('click', addTarjet);
+  newTarea.addEventListener('click', addTarea);
 }
 // Agregar lista
 function addList(event) {
@@ -44,4 +44,34 @@ function addList(event) {
   newlist.style.display = 'none';
   form.style.display = 'inline-block';
   texto.focus();
+}
+// Agregar Tarea y por el evento click crear una tarjeta 
+function addTarea(event) {
+  event.preventDefault();
+  this.style.display = 'none';
+  // form para escribir tarea 
+  var form = document.createElement('form');
+  var area = document.createElement('textArea');
+  area.classList.add('areaTexto');
+  area.setAttribute('type', 'text');
+  // Creando boton añadir
+  var nuevoBoton = document.createElement('button');
+  var nodoBoton = document.createTextNode('Añadir');
+  nuevoBoton.classList.add('nuevoBoton');
+  nuevoBoton.setAttribute('type', 'submit');
+  nuevoBoton.appendChild(nodoBoton);
+  form.appendChild(area);
+  form.appendChild(nuevoBoton);
+  this.parentElement.insertBefore(form, this.nextSibling);
+  nuevoBoton.addEventListener('click', createTarea);
+  area.focus();
+}
+function createTarea(event) {
+  event.preventDefault();
+  this.parentElement.style.display = 'none';
+  this.parentElement.previousSibling.style.display = 'block';
+  var textoTarea = document.createElement('div');
+  textoTarea.classList.add('Tareas');
+  textoTarea.textContent = this.previousSibling.value;
+  this.parentElement.parentElement.insertBefore(textoTarea, this.parentElement.previousSibling);
 }
