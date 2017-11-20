@@ -1,49 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trello</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-<body>
-   <header>
-            <ul>
-                <li>
-                    <i class="fa fa-trello" aria-hidden="true"></i>
-                    <div>Tablero</div>
-                </li>
-                <li>
-                    <form action="">
-                        <input type="text">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </form>
-                </li>
-                <li>
-                    <i class="fa fa-trello" aria-hidden="true"></i>
-                    <p>Trello</p>
-                </li>
-                <li>
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    <i class="fa fa-bell-o" aria-hidden="true"></i>
-                    
-                </li>
-            </ul>
-    </header>
-    <section>
-       
-        <h1>Tablero-Reto de codigo</h1>
-        <span id = "newlist">Añadir una lista...</span><br>
-        <div id ="container">   
-            <form id = "form">
-                <input id = "lista" type ="text" placeholder = "Añadir una lista...">
-                <button id= "btn-save">Guardar</button>
-            </form>
-         </div>
-    </section>
-       <script src="js/app.js"></script>
-</body>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Trello</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body id="body">
+		<header>
+            <div >
+                <h3>Trello</h3>
+            </div>
+        </header>
+		<div id="container">	
+			<span id="newlist">Añadir lista ...</span>
+			<form id="form">
+				<div id="box">
+					<input id="texto" type="text" placeholder="Añadir lista ...">
+					<button id="boton" type="submit">Guardar</button>
+				</div>
+			</form>
+		</div>
+	<script type="text/javascript" src="js/app.js"></script>
+	</body>
 </html>
