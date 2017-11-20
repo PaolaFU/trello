@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box; 
+    margin:0;
+}
+
+body{
+    background-color: #cd5a91;
+    font-family: helvetica;
+}
+
+li{
+    display: inline-block;
+}
+#container, h1, #newlist {
+    margin: 30px;
+}
+/*Estilo para span "añadir lista"*/
+#newlist{
+    border-radius: 8px;
+    background-color: #ae4d7b;
+    border-style: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px;
+    color: white;
+    display: block;
+    width: 250px;
+    
+} 
+#newlist:hover{
+    background-color: red;
+}
+
+/*Esconder el boton guardar*/
+#btn-save{
+    
+    display: none;
+}
+/*Esconder input añadir lista*/
+#lista{
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 250px;
+    cursor: pointer;
+    display: none;
+    border-style: none;
+}
+#container{
+    background-color: gainsboro;
+    padding: 5px;
+    width: 260px;
+    height: auto;
+    display: none;
+}

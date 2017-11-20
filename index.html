@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <header>
+   <header>
             <ul>
                 <li>
                     <i class="fa fa-trello" aria-hidden="true"></i>
@@ -36,14 +36,14 @@
     <section>
        
         <h1>Tablero-Reto de codigo</h1>
-        <div id ="container-agregar">
-            <button id = "btn">Añadir una lista...</button>
-            <form action ="">
-                <input type ="text">
+        <span id = "newlist">Añadir una lista...</span><br>
+        <div id ="container">   
+            <form id = "form">
+                <input id = "lista" type ="text" placeholder = "Añadir una lista...">
                 <button id= "btn-save">Guardar</button>
             </form>
          </div>
-       </section>
+    </section>
        <script src="js/app.js"></script>
 </body>
 </html>
